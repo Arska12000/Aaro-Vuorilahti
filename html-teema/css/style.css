@@ -1,0 +1,316 @@
+* {
+      box-sizing: border-box;
+}
+
+body {
+   font-size: 15px/1.5;  
+   font-family: 'Lato', sans-serif;
+   padding: 0;
+   margin: 0;
+   background-color: #35424a;
+   }
+   ul {
+     margin: 0;
+     padding: 0;
+   }
+   
+   .container {
+      width: 80%;
+      max-width: 1200px;
+   }
+
+   .highlight {
+      color: #121ba3;
+      font-weight: bold;
+   }
+
+/* Header-tyylit */
+
+header {
+   background-color: #35424a;
+   color: #f4f4f4;
+   padding: 30px 0;
+   padding-left: 80px;
+   min-height: 70px;
+   border-bottom: #20cc4b    3px solid;            
+
+
+}
+
+#branding img {
+   display: block;
+   position: absolute; /* Add this line */
+   top: 0; /* Add this line */
+   left: -15px; /* Add this line */
+   padding: 5px;
+   margin: 0px 10px 0px 10px ;
+   height: 70px;
+   -ms-transform: rotate(0deg); /* IE9 */
+   -webkit-transform: rotate(0deg); /* Chrome, Safari, Edge, Opera */
+   transform: rotate(0deg); 
+}
+
+#branding h1 {
+   margin: 0px;
+}
+
+header a {
+      color: #00ff22;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+
+}
+
+header li {
+      display: inline;
+      padding: 0 20px;
+
+}
+
+
+header #branding {
+   float: left;
+}
+
+header {
+   position: relative;
+ }
+ 
+ header nav {
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin-top: 15px;
+ }
+
+/* Showcase */
+#showcase {
+   min-height: 1080px;
+   background-image: url('../img/516050.jpg');
+   text-align: center;
+   color: #ffffff;
+
+}
+
+
+#showcase h1 {
+      font-size: 60px;
+      margin-top: 100px;
+}
+
+#showcase p {
+      font-size: 22px;
+
+}
+
+/* Main */
+#main-col {
+   width: 100%;
+   line-height: 1.5em;
+ }
+ 
+ .centered-header {
+   text-align: fixed;
+ }
+ 
+ #main-col h1 {
+   font-size: 1.5em;
+   display: inline-block; /* Add this line to make the h1 element a block-level element */
+   color: #ffffff;
+   }
+
+   #main-col p {
+      font-size: 1.5em;
+      display: inline-block; /* Add this line to make the h1 element a block-level element */
+      color: #ffffff;
+   }
+
+   .rain-col {
+    color: #00ff00;
+  }
+
+#sidebar h1 {
+   font-size: 1.5em;
+   color: #ffffff;
+}
+#sidebar p {
+   font-size: 1.5em;
+   color: #ffffff;
+}
+
+
+#sidebar h3 {
+   font-size: 1.3em;
+   color: #ffffff;
+}
+
+
+#sidebar img {
+   max-width: 100%;
+}
+
+/* Projects */
+#projects li{
+   list-style-type: none;
+   padding: 20px;
+   border: #cccccc solid 1px;
+   background-color: #e6e6e6;
+   margin-bottom: 10px;
+   
+}
+
+/* Future */
+#future {
+   list-style-type: none;
+   padding: 20px;
+   border: #35424a solid 1px;
+   background-color: #35424a;
+   margin-bottom: 10px;
+   color: #ffffff;
+   font-size: 20px;
+}
+
+/* Footer */
+footer {
+   padding: 20px;
+   color: #f4f4f4;
+   background-color: #6b7074;
+   text-align: center;
+   border-top: #20cc4b   3px solid; 
+}
+
+/* Default styles for larger screens */
+
+/* ... (your existing code remains the same) */
+
+/* Media query for smaller screens (max-width: 768px) */
+
+@media only screen and (max-width: 768px) {
+   /* Adjust font sizes and margins */
+   body {
+     font-size: 14px;
+     margin: 10px;
+   }
+ 
+   /* Adjust container width */
+   .container {
+     width: 90%;
+     margin: 0 auto;
+     padding: 10px;
+   }
+ 
+   /* Adjust header styles */
+   header {
+     padding: 10px 0;
+   }
+ 
+   #branding {
+     width: 100%;
+     clear: both;
+   }
+ 
+   header nav {
+     margin-top: 70px;
+     float: none;
+     width: 100%;
+     clear: both;
+   }
+ 
+   header nav ul {
+     display: block;
+     width: 100%;
+     text-align: center;
+   }
+ 
+   header nav ul li {
+     width: 100%;
+     display: block;
+     clear: both;
+     text-align: center;
+     padding: 10px 0;
+   }
+ 
+   /* Adjust showcase styles */
+   #showcase h1 {
+     font-size: 1em;
+   }
+ 
+   /* Adjust main and sidebar styles */
+   #sidebar, #main-col {
+     width: 100%;
+   }
+ 
+   /* Adjust project styles */
+   #projects li {
+     padding: 10px;
+     border: #cccccc solid 1px;
+     background-color: #e6e6e6;
+     margin-bottom: 10px;
+   }
+ }
+ 
+ /* Media query for even smaller screens (max-width: 480px) */
+ @media only screen and (max-width: 480px) {
+   /* Adjust font sizes and margins */
+   body {
+     font-size: 12px;
+     margin: 5px;
+   }
+ 
+   /* Adjust container width */
+   .container {
+     width: 95%;
+     margin: 0 auto;
+     padding: 5px;
+   }
+ 
+   /* Adjust header styles */
+   header {
+     padding: 5px 0;
+   }
+ 
+   #branding {
+     width: 100%;
+     clear: both;
+   }
+ 
+   header nav {
+     margin-top: 50px;
+     float: none;
+     width: 100%;
+     clear: both;
+   }
+ 
+   header nav ul {
+     display: block;
+     width: 100%;
+     text-align: center;
+   }
+ 
+   header nav ul li {
+     width: 100%;
+     display: block;
+     clear: both;
+     text-align: center;
+     padding: 5px 0;
+   }
+ 
+   /* Adjust showcase styles */
+   #showcase h1 {
+     font-size: 0.8em;
+   }
+ 
+   /* Adjust main and sidebar styles */
+   #sidebar, #main-col {
+     width: 100%;
+   }
+ 
+   /* Adjust project styles */
+   #projects li {
+     padding: 5px;
+     border: #cccccc solid 1px;
+     background-color: #e6e6e6;
+     margin-bottom: 5px;
+   }
+ }
