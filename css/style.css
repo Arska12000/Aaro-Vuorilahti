@@ -314,3 +314,33 @@ footer {
      margin-bottom: 5px;
    }
  }
+
+/* Default styles here */
+
+/* Media query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  /* Styles for smaller screens here */
+  body {
+    font-size: 14px;
+  }
+  header {
+    height: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  /* Styles for even smaller screens here */
+  body {
+    font-size: 12px;
+  }
+  header {
+    height: 30px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
